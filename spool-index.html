@@ -11,6 +11,81 @@
 .preview-artwork{max-width:min(46vw,260px);max-height:230px;object-fit:contain;border-radius:7px;filter:drop-shadow(0 12px 18px #0005)}.clip-thumb img{max-height:62px;max-width:100%;object-fit:contain}.clip-speaker{color:var(--gold2);font-size:11px;display:block;margin:6px 0}.continuity-alert{color:#e7b18b}.continuity-ok{color:#9ed7c1}
 .scene-direction{border:1px solid var(--line);border-radius:9px;padding:12px;background:#111b24}.scene-direction>summary{cursor:pointer;color:var(--gold2);padding:5px}.scene-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:12px}.scene-backdrop-classroom{background:linear-gradient(135deg,#35494d,#162a2a)}.scene-backdrop-library{background:linear-gradient(135deg,#58402e,#1d2834)}.scene-backdrop-night-sky{background:linear-gradient(135deg,#172b53,#0c1527)}.scene-backdrop-garden{background:linear-gradient(135deg,#294f37,#172b24)}.scene-backdrop-studio{background:radial-gradient(ellipse at 50% 35%,#31414a,#121b22 65%)}.scene-position-left .preview-inner{transform:translateX(-17%)}.scene-position-right .preview-inner{transform:translateX(17%)}.scene-scale-close .preview-artwork{max-height:275px;max-width:min(55vw,320px)}.scene-scale-wide .preview-artwork{max-height:160px;max-width:min(35vw,210px)}@media(max-width:590px){.scene-grid{grid-template-columns:1fr}}
 .voice-workflow{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}.voice-workflow span{padding:7px 10px;border:1px solid var(--line);border-radius:7px;font-size:11px;color:var(--gold2)}.voice-cloud{margin-top:16px;padding:12px;border:1px solid var(--line);border-radius:7px}.voice-cloud summary{cursor:pointer;color:var(--gold2);font-size:12px}.voice-advanced{flex-basis:100%;width:100%;border-top:1px solid var(--line);padding-top:8px}.voice-advanced>summary{cursor:pointer;color:var(--muted);font-size:11px}.voice-action-bar{display:flex;gap:7px;flex-wrap:wrap}.voice-selected{border-color:var(--gold)}
+</style><style id="spool-parchment-v1">
+/* SPOOL · Verve N Veda Parchment Theme v1. Presentation-only override.
+   Maintains existing application structure, storage, workflows and event handlers. */
+:root{
+ --bg:#f5f0e7;--panel:#fffcf6;--panel2:#f0e8db;--line:#cfc1aa;
+ --text:#292d2c;--muted:#625d55;--gold:#ad8444;--gold2:#89642e;
+ --teal:#426c62;--red:#a44e43;--radius:7px;
+ --charcoal:#303637;--paper-deep:#e9ddc9;
+}
+html{color-scheme:light}
+body{background:radial-gradient(ellipse at 48% -8%,#fffdf8 0,transparent 44%),#f5f0e7;color:var(--charcoal);font-family:"Brandon Grotesque","Avenir Next",Avenir,"Segoe UI",Arial,sans-serif;font-weight:400}
+aside{background:linear-gradient(180deg,#efe6d6,#e9dfce);border-right-color:var(--line)}
+.brand-mark{background:#fffaf1;color:var(--charcoal);border-color:var(--gold);border-radius:7px}
+.brand b{color:var(--charcoal);font-family:Cinzel,Georgia,serif;font-weight:400}
+.brand small,.nav-label{color:#615a50}
+.nav button{color:#3b403d;border:1px solid transparent;border-radius:7px}
+.nav button.active,.nav button:hover{background:#fffbf3;color:#222826;border-color:#cbbb9f}
+.side-bottom{background:#faf5eb;color:#534f48;border-color:var(--line)}
+.side-bottom b{color:#384b43!important}
+.status-dot{background:#527d69}
+.eyebrow{color:#83632e;font-family:Cinzel,Georgia,serif;font-weight:400}
+.topbar h1{font-family:Cinzel,Georgia,serif;color:#303637;font-weight:400}
+.btn,.icon-btn{background:#fffaf1;color:#2d3431;border:1px solid #cbbda6;border-radius:7px;font-weight:400}
+.btn:hover,.icon-btn:hover{background:#efe5d4;border-color:#9c814f}
+.btn.primary{background:#303637;color:#faf5ec;border-color:#303637;font-weight:400}
+.btn.primary:hover{background:#46504e}
+.btn.ghost{background:#f6f0e5;color:#313735}
+.panel{background:#fffdf8;border:1px solid var(--line);border-radius:7px;box-shadow:0 8px 22px rgba(74,60,40,.055)}
+.panel-head{background:#f1e8da;border-bottom:1px solid #d5c7af}
+.panel-head h2{color:#303637;font-family:Cinzel,Georgia,serif;font-weight:400}
+.panel-head p,.helper,.empty-note,.footer-note{color:#655f55}
+.panel-body{background:#fffdf8}
+.preview{background:radial-gradient(ellipse at 48% 34%,#fdf8ef,#e9ddc9 78%);border-bottom:1px solid var(--line)}
+.preview::before,.preview::after{color:#ab8a56;opacity:.35}
+.preview-title{color:#2c3633;font-family:Cinzel,Georgia,serif}
+.preview-sub{color:#5b625c}
+.preview-badge,.pill{background:#fffaf0e8;color:#38413b;border:1px solid #cebea3;border-radius:7px}
+.field label,.voice-info strong{color:#303637;font-weight:400}
+.field label span{color:#6c665b}
+input[type=text],textarea,select{background:#fffefa;color:#292d2c;border:1px solid #c9baa0;border-radius:7px}
+input::placeholder,textarea::placeholder{color:#81786b}
+input[type=range]{accent-color:#816337}
+.voice-card{background:#fcf8ef;border:1px solid #d4c5ae;border-radius:7px}
+.voice-card.voice-selected{border-color:#937446;background:#f5ecda}
+.voice-avatar{background:#ece1cd;color:#58452d;border-radius:7px}
+.voice-info small,.voice-drawer>summary small{color:#655f55}
+.voice-warning,.notice{background:#f1eadc;border:1px solid #d7c7aa;border-left:3px solid #a48652;color:#4e514b;border-radius:7px}
+.notice strong{color:#6e542b}
+.voice-drawer>summary{background:#efe4d3;color:#303637}
+.voice-drawer[open]>summary{border-color:var(--line)}
+.voice-drawer>summary strong{font-family:Cinzel,Georgia,serif;font-weight:400}
+.voice-workflow span{background:#f3ecdf;color:#5c492e;border-color:#cdbc9f}
+.voice-advanced,.voice-cloud{border-color:var(--line);background:#fffbf4;color:#444b45}
+.voice-advanced>summary,.voice-cloud summary{color:#63502f}
+.voice-filters select{background:#fffdfa;color:#303637}
+.scene-direction{background:#f8f1e6;border-color:#d1c0a7}
+.scene-direction>summary{color:#5e482d}
+.scene-backdrop-studio{background:radial-gradient(ellipse at 50% 35%,#f8edda,#e8d9c1 68%)}
+.scene-backdrop-classroom{background:linear-gradient(135deg,#e4e9db,#c5d0c2)}
+.scene-backdrop-library{background:linear-gradient(135deg,#e8d4b2,#c7b494)}
+.scene-backdrop-night-sky{background:linear-gradient(135deg,#41506a,#1e2b45)}
+.scene-backdrop-garden{background:linear-gradient(135deg,#dce8cd,#b5c9ad)}
+.timeline-panel{background:#f2e8d8}
+.timeline{background:#f5ecdc}
+.clip-card{background:#fffaf1;color:#303637;border:1px solid #cbbb9f;border-radius:7px}
+.clip-card.selected{border-color:#977344;box-shadow:0 0 0 2px #c1a47665}
+.clip-thumb{background:linear-gradient(135deg,#f0e4d1,#d8c8ab);border-radius:7px}
+.clip-card p,.clip-meta{color:#625d55}
+.clip-speaker{color:#6c4f24}
+.clip-add{border-color:#b8a588;color:#5e574b;background:#f9f4ea;border-radius:7px}
+.clip-add span{color:#876538}
+.toast{background:#eee0c1;color:#313735;border:1px solid #bda778;border-radius:7px}
+.bottom-actions{background:#f6eee2;border-top-color:var(--line)}
+button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible,summary:focus-visible{outline:2px solid #75603c;outline-offset:2px}
+@media(max-width:600px){.panel-head{background:#f1e7d8}.voice-card{gap:9px}.voice-action-bar{width:100%;justify-content:flex-start}}
 </style></head>
 <body><div class="app">
 <aside><div class="brand"><div class="brand-mark">⟳</div><div class="brand-copy"><b>SPOOL</b><small>Verve N Veda</small></div></div><div><div class="nav-label">Workspace</div><nav class="nav"><button class="active" data-view="studio"><span class="ico">▦</span><span class="nav-text">Studio</span></button><button data-view="projects"><span class="ico">▤</span><span class="nav-text">Projects</span></button><button data-view="characters"><span class="ico">♙</span><span class="nav-text">Characters</span></button><button data-view="voices"><span class="ico">♫</span><span class="nav-text">Voice library</span></button></nav></div><div><div class="nav-label">Create</div><nav class="nav"><button data-action="newclip"><span class="ico">＋</span><span class="nav-text">New clip</span></button><button data-action="export"><span class="ico">⇧</span><span class="nav-text">Export story</span></button></nav></div><div class="side-bottom"><span class="status-dot"></span><b style="color:#dbe7e5">Local project mode</b><br><br>Your project is saved in this browser. AI generation is not connected yet.</div></aside>
